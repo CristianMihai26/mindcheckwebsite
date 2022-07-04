@@ -11,3 +11,43 @@ html{
     overflow-x: hidden;
 }
 
+body{
+    height: 100vh;
+    /* Created with https://www.css-gradient.com */
+background: #AAAAAA;
+background: -webkit-radial-gradient(top left, #AAAAAA, #000000);
+background: -moz-radial-gradient(top left, #AAAAAA, #000000);
+background: radial-gradient(to bottom right, #AAAAAA, #000000);
+display: flex;
+align-items: center;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    gap: 65px;
+    background: rgb(18 11 242 / 8%);
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 12.5px );
+-webkit-backdrop-filter: blur( 12.5px );
+border-radius: 0px 10px 10px 0px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+padding: 20px;
+}
+
+
+ion-icon{
+    width: 30px;
+    height: 30px;
+}
+
+a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.main{
+    display: flex;
+}
+
