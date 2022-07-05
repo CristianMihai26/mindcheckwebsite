@@ -50,7 +50,7 @@ a{
 .main{
     display: flex;
     display: flex;
-    column-gap: 10rem;
+    column-gap: 13.5rem;
     width: 100%;
     align-items: center;
 }
@@ -70,6 +70,11 @@ a{
     border-radius: 10px 0px 0px 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     padding: 20px;
+    transform: translatex(100%);
+}
+
+.wrapper.home.active{
+    transform: translateX(0%);
 }
 
 .hero{
@@ -129,3 +134,4 @@ p{
 .list ion-icon{
     color: #aaaaaa72;
 }
+
