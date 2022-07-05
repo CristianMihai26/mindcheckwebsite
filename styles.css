@@ -3,7 +3,7 @@
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
-
+    transition: all 500ms ease;
 }
 
 html{
@@ -49,6 +49,10 @@ a{
 
 .main{
     display: flex;
+    display: flex;
+    column-gap: 10rem;
+    width: 100%;
+    align-items: center;
 }
 
 #mindcheck{
@@ -56,4 +60,72 @@ a{
     height: 400px;
     z-index: -1;
     position: absolute;
+}
+
+.wrapper{
+    background: rgb(18 11 242 / 8%);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 12.5px );
+    -webkit-backdrop-filter: blur( 12.5px );
+    border-radius: 10px 0px 0px 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 20px;
+}
+
+.hero{
+    display: block;
+    width: 80vw;
+    align-self: center;
+}
+
+h1{
+    font-family: 'Cairo';
+    color: whitesmoke;
+}
+
+.imgholder{
+    height: 464px;
+    width: 228px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: rgba(123, 11, 242, 0.08);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 12.5px );
+    -webkit-backdrop-filter: blur( 12.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.grid{
+display: flex;
+gap: 10px;
+}
+
+p{
+    color: white;
+}
+
+.rightcolumn{
+    border-radius: 20px;
+    overflow: hidden;
+    background: rgba(123, 11, 242, 0.08);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 12.5px );
+    -webkit-backdrop-filter: blur( 12.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 20px;
+}
+
+.list.active ion-icon{
+    filter: drop-shadow( 0 0 10px rgb(75, 87, 255));
+    color: white;
+}
+
+.list ion-icon{
+    color: #aaaaaa72;
 }

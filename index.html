@@ -12,27 +12,54 @@
     <div class="main">
         <aside>
             <ul>
-                <li><a href="index.html"><ion-icon name="home"></ion-icon></ion-icon>
-                </a>
+                <li class="list active"><ion-icon name="home"></ion-icon></ion-icon>
             </li>
-            <li><a href="dashboard.html" class="active"><ion-icon name="cafe"></ion-icon>
-            </a>
+            <li class="list"><ion-icon name="cafe"></ion-icon>
         </li>
-        <li><a href="add-user.html"><ion-icon name="share"></ion-icon>
-        </a>
+        <li class="list"><ion-icon name="share"></ion-icon>
     </li>
-    <li><a href="manage-users.html"><ion-icon name="clipboard"></ion-icon></ion-icon>
-    </a>
+    <li class="list"><ion-icon name="clipboard"></ion-icon></ion-icon>
 </li>
-<li><a href="add-category.html"><ion-icon name="send"></ion-icon></ion-icon>
-</a>
+<li class="list"><ion-icon name="send"></ion-icon>
 </li>
 </li>
             </ul>
         </aside>
+        <div class="hero">
+            <div class="wrapper home">
+            <h1>Hi, my name is Cristina!</h1>
+            <div class="grid">
+              <div class="leftcolumn">
+                <div class="imgholder">
+                <img src="sources/cristina.webp">
+            </div>
+              </div>
+              <div class="rightcolumn">
+                <div class="pholder">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae natus, aliquid unde corporis ducimus culpa distinctio recusandae asperiores nisi, iure et deserunt fuga tenetur nulla! Ex sint quae voluptas iste commodi dicta unde dolor laborum, corrupti cupiditate accusantium facere minus voluptates, omnis quaerat, molestias corporis officia possimus delectus? Expedita, perferendis?</p>
+                </div>
+              </div>  
+            </div>
+
+            </div>
+        </div>
     </div>
 
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+    const list = document.querySelectorAll('.list');
+function activeLink (){
+    list.forEach((item) =>
+    item.classList.remove('active'));
+    this.classList.add('active');
+}
+list.forEach ((item) =>
+item.addEventListener ('click',activeLink));
+</script>
 </body>
 </html>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap');
+    </style>
