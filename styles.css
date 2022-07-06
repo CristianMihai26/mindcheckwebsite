@@ -262,6 +262,10 @@ flex-direction:row;
     bottom:-417px;
 }
 
+.wrapper.home.active{
+    transform: translatey(4%);
+}
+
 .wrapper.about{
     bottom:285px;
     width: 100%;
