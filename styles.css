@@ -20,6 +20,7 @@ background: -moz-radial-gradient(top left, #AAAAAA, #000000);
 background: radial-gradient(to bottom right, #AAAAAA, #000000);
 display: flex;
 align-items: center;
+overflow: hidden;
 }
 
 ul{
@@ -71,9 +72,14 @@ a{
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     padding: 20px;
     transform: translatex(100%);
-    position: absolute;
-    bottom:77px;
+    position: relative;
+    bottom: -555px;
     height: 80%;
+}
+
+.wrapper.about{
+    height: 566px;
+    bottom: 11px;
 }
 
 .wrapper.about.active{
@@ -86,6 +92,8 @@ a{
 
 .wrapper.contact{
     width: 100%;
+    bottom:579px;
+    height: 566px;
 }
 
 .wrapper.contact.active{
@@ -172,16 +180,17 @@ p{
     background: rgba(26, 26, 32, 0.496);
 }
 
-.socials{
+.iconite{
     position: absolute;
-    width: 30px;
-    left: 529px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
     bottom: 120px;
     color: white;
 }
 
 .linkedin{
-    margin-left: 50px;
+    margin-left: 20px;
     filter: drop-shadow( 0 5px 10px rgb(29, 221, 255));
 }
 
@@ -191,7 +200,7 @@ p{
 }
 
 .facebook{
-    margin-left: 100px;
+    margin-left: 20px;
     filter: drop-shadow( 0 5px 10px rgb(29, 44, 255));
 }
 

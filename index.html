@@ -9,9 +9,11 @@
 </head>
 <body>
     <img id="mindcheck" src="sources/mindcheck.svg">
+    <div class="iconite">
     <a href="https://www.instagram.com/mindcheck_ro"><ion-icon class="socials instagram" name="logo-instagram"></ion-icon></a>
     <a href="https://m.facebook.com/people/Mind-Check/100074067317214/"><ion-icon class="socials facebook" name="logo-facebook"></ion-icon></a>
     <a href="https://www.linkedin.com/in/cristina-rîndașu-838876140/"><ion-icon class="socials linkedin" name="logo-linkedin"></ion-icon></a>
+    </div>
     <div class="main">
         <aside>
             <ul>
@@ -21,7 +23,7 @@
         </li>
         <li class="list social"><ion-icon name="share"></ion-icon>
     </li>
-    <li class="list publications"><ion-icon name="clipboard"></ion-icon></ion-icon>
+    <li class="list publications"><a href="https://link.springer.com/article/10.1007/s12144-021-02240-2"><ion-icon name="clipboard"></ion-icon></a>
 </li>
 <li class="list mail"><ion-icon name="send"></ion-icon>
 </li>
@@ -29,7 +31,7 @@
             </ul>
         </aside>
         <div class="hero">
-            <div class="wrapper home">
+            <div class="wrapper home active">
             <h1>Hi, my name is Cristina!</h1>
             <div class="grid">
               <div class="leftcolumn">
@@ -122,6 +124,7 @@ item.addEventListener ('click',activeLink));
     const abt = document.querySelector('.abt');
     const mail = document.querySelector('.mail');
     const contact = document.querySelector('.contact');
+    const social = document.querySelector('.social');
 
     frontp.onclick = function (){
        home.classList.toggle ('active');
@@ -139,6 +142,12 @@ item.addEventListener ('click',activeLink));
         about.classList.remove ('active');
        home.classList.remove ('active');
        contact.classList.toggle ('active');
+    }
+
+    social.onclick = function(){
+        about.classList.remove ('active');
+       home.classList.remove ('active');
+       contact.classList.remove ('active');
     }
 
 
