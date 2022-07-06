@@ -455,3 +455,94 @@ img{
 }
 
 }
+
+
+
+@media screen and (max-width:340px){
+    aside{
+display: flex;	    
+position: fixed;
+bottom: -10px;
+Z-index:20;
+transform: scale(0.8);
+    margin-left: -44px;
+    width: 270px;
+}
+
+ul{
+flex-direction:row;
+}
+
+.wrapper{
+        
+        padding: 20px;
+        transform: translatey(-100%);
+        position: relative;
+        bottom: -555px;
+        height: 80%;
+    }
+.hero{
+    width: 100%;
+}
+
+.grid{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 530px;
+}
+
+.imgholder{
+    height: 180px;
+    width: 153px;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    position: relative;
+    top:-17px;
+}
+
+.wrapper.home{
+    bottom:-100px;
+}
+
+.wrapper.home.active{
+    position: fixed;
+    top:0
+}
+
+.wrapper.about{
+    bottom:493px;
+    width: 100%;
+}
+
+.wrapper.about.active{
+    position: fixed;
+    top:0
+}
+
+.wrapper.contact{
+    width: 100%;
+    bottom: 820px;
+    height: 566px;
+}
+
+.wrapper.contact.active{
+    position: fixed;
+    top:0
+}
+
+.edu ul{
+    flex-direction: column;
+}
+
+}
+
+
+
+
+
+
