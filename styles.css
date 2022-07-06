@@ -71,9 +71,24 @@ a{
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     padding: 20px;
     transform: translatex(100%);
+    position: absolute;
+    bottom:77px;
+    height: 80%;
+}
+
+.wrapper.about.active{
+    transform: translateX(0%);
 }
 
 .wrapper.home.active{
+    transform: translateX(0%);
+}
+
+.wrapper.contact{
+    width: 100%;
+}
+
+.wrapper.contact.active{
     transform: translateX(0%);
 }
 
@@ -115,7 +130,7 @@ p{
     color: white;
 }
 
-.rightcolumn{
+.pholder{
     border-radius: 20px;
     overflow: hidden;
     background: rgba(123, 11, 242, 0.08);
@@ -135,3 +150,61 @@ p{
     color: #aaaaaa72;
 }
 
+.edu{
+    width: max-content;
+    color: white;
+}
+
+.about li{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.facultate{
+    font-size: 15px;
+    width: 200px;
+    top: -55px;
+    position: relative;
+}
+
+.about ul{
+    background: rgba(26, 26, 32, 0.496);
+}
+
+.socials{
+    position: absolute;
+    width: 30px;
+    left: 529px;
+    bottom: 120px;
+    color: white;
+}
+
+.linkedin{
+    margin-left: 50px;
+    filter: drop-shadow( 0 5px 10px rgb(29, 221, 255));
+}
+
+.linkedin:hover{
+    transform: scale(1.1);
+    color: rgb(19, 19, 126);
+}
+
+.facebook{
+    margin-left: 100px;
+    filter: drop-shadow( 0 5px 10px rgb(29, 44, 255));
+}
+
+.facebook:hover{
+    transform: scale(1.1);
+    color: rgb(51, 51, 250);
+}
+
+.instagram{
+    filter: drop-shadow( 0 5px 10px rgb(255, 29, 135));
+}
+
+.instagram:hover{
+    transform: scale(1.1);
+    color: rgb(216, 39, 228);
+}

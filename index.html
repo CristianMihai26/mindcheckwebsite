@@ -9,18 +9,21 @@
 </head>
 <body>
     <img id="mindcheck" src="sources/mindcheck.svg">
+    <a href="https://www.instagram.com/mindcheck_ro"><ion-icon class="socials instagram" name="logo-instagram"></ion-icon></a>
+    <a href="https://m.facebook.com/people/Mind-Check/100074067317214/"><ion-icon class="socials facebook" name="logo-facebook"></ion-icon></a>
+    <a href="https://www.linkedin.com/in/cristina-rîndașu-838876140/"><ion-icon class="socials linkedin" name="logo-linkedin"></ion-icon></a>
     <div class="main">
         <aside>
             <ul>
                 <li class="list frontp active"><ion-icon name="home"></ion-icon></ion-icon>
             </li>
-            <li class="list about"><ion-icon name="cafe"></ion-icon>
+            <li class="list abt"><ion-icon name="cafe"></ion-icon>
         </li>
-        <li class="list socials"><ion-icon name="share"></ion-icon>
+        <li class="list social"><ion-icon name="share"></ion-icon>
     </li>
     <li class="list publications"><ion-icon name="clipboard"></ion-icon></ion-icon>
 </li>
-<li class="list contact"><ion-icon name="send"></ion-icon>
+<li class="list mail"><ion-icon name="send"></ion-icon>
 </li>
 </li>
             </ul>
@@ -40,8 +43,61 @@
                 </div>
               </div>  
             </div>
-
             </div>
+
+            <div class="wrapper about">
+                <div class="grid">
+                  <div class="leftcolumn">
+                    <h1>Education</h1>
+                    <div class="edu">
+                        <ul>
+                            <li><ion-icon name="newspaper-outline"></ion-icon>
+                                <h5>Diplomă de licenţă</h5>
+                            </li>
+                            <h3 class="facultate">Facultatea de Psihologie şi Ştiinţele Educaţiei - Universitatea din Bucureşti</h3>
+                        </ul>   
+                </div>
+                  </div>
+                  <div class="rightcolumn">
+                  <h1>Skills</h1>
+                    <div class="pholder">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae natus, aliquid unde corporis ducimus culpa distinctio recusandae asperiores nisi, iure et deserunt fuga tenetur nulla! Ex sint quae voluptas iste commodi dicta unde dolor laborum, corrupti cupiditate accusantium facere minus voluptates, omnis quaerat, molestias corporis officia possimus delectus? Expedita, perferendis?</p>
+                    </div>
+                  </div>  
+                </div>
+                </div>
+
+                <div class="wrapper contact">
+                    <div class="formwrapper">
+                        <form class="contact" action="contact-form-handler.php" method="POST">
+
+                            <div class="input-data">
+                                <label>Name</label>
+                                <input type="text" required>
+                            </div>
+                            <div class="input-data">
+                                <label>Email</label>
+                                <input name="name" type="text" required>    
+                            </div>
+                            <div class="input-data">
+                                <label>Company</label>
+                                <input name="company" type="text">  
+                            </div>
+                            <div class="input-data">
+                                <label>Message</label>
+                                <textarea name="message" cols="30" rows="10"></textarea>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" id="agreement" name="agreement">
+                                <label for="agreement">I agree to my data storage and processing*</label>
+                            </div>
+                            <div class="submit">
+                                <input type="submit" value="SEND MESSAGE">
+                            </div>
+                        </form>
+                    
+                    </div>
+                    </div>
         </div>
     </div>
 
@@ -62,10 +118,30 @@ item.addEventListener ('click',activeLink));
     const home = document.querySelector('.home');
     const wrapper = document.querySelector('.wrapper');
     const frontp = document.querySelector('.frontp');
+    const about = document.querySelector('.about');
+    const abt = document.querySelector('.abt');
+    const mail = document.querySelector('.mail');
+    const contact = document.querySelector('.contact');
 
     frontp.onclick = function (){
-       home.classList.add('active')
+       home.classList.toggle ('active');
+       about.classList.remove ('active');
+       contact.classList.remove ('active');
     };
+
+    abt.onclick = function (){
+       about.classList.toggle ('active');
+       home.classList.remove ('active');
+       contact.classList.remove ('active');
+    };
+
+    mail.onclick = function(){
+        about.classList.remove ('active');
+       home.classList.remove ('active');
+       contact.classList.toggle ('active');
+    }
+
+
 </script>
 
 </body>
