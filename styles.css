@@ -217,3 +217,66 @@ p{
     transform: scale(1.1);
     color: rgb(216, 39, 228);
 }
+
+/*=============================MOBILE=======================*/
+
+@media screen and (max-width:500px){
+    aside{
+display: flex;	    
+position: fixed;
+bottom: 0;
+Z-index:20;
+transform: scale(0.9);
+    margin-left: -20px;
+}
+
+ul{
+flex-direction:row;
+}
+
+.wrapper{
+        
+        padding: 20px;
+        transform: translatey(-100%);
+        position: relative;
+        bottom: -555px;
+        height: 80%;
+    }
+.hero{
+    width: 100%;
+}
+
+.grid{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.wrapper.home{
+    bottom:-513px;
+}
+
+.wrapper.about{
+    bottom:285px;
+    width: 100%;
+}
+
+.wrapper.about.active{
+    bottom: 261px;
+}
+
+.wrapper.contact{
+    width: 100%;
+    bottom: 820px;
+    height: 566px;
+}
+
+.wrapper.contact.active{
+    transform: translateY(13%);
+}
+
+.edu ul{
+    flex-direction: column;
+}
+
+}
