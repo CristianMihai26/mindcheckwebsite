@@ -263,7 +263,7 @@ flex-direction:row;
 }
 
 .wrapper.home.active{
-    transform: translatey(10%);
+    bottom: -500px;
 }
 
 .wrapper.about{
