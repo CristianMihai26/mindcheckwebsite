@@ -220,7 +220,7 @@ p{
 
 /*=============================MOBILE=======================*/
 
-@media screen and (max-width:500px){
+@media screen and (max-width:500px) and (min-width:428px){
     aside{
 display: flex;	    
 position: fixed;
@@ -259,7 +259,7 @@ flex-direction:row;
 }
 
 .wrapper.home{
-    bottom:-417px;
+    bottom:-100px;
 }
 
 .wrapper.home.active{
@@ -268,12 +268,13 @@ flex-direction:row;
 }
 
 .wrapper.about{
-    bottom:285px;
+    bottom:493px;
     width: 100%;
 }
 
 .wrapper.about.active{
-    bottom: 261px;
+    position: fixed;
+    top:0
 }
 
 .wrapper.contact{
@@ -283,7 +284,170 @@ flex-direction:row;
 }
 
 .wrapper.contact.active{
-    transform: translateY(13%);
+    position: fixed;
+    top:0
+}
+
+.edu ul{
+    flex-direction: column;
+}
+
+}
+
+@media screen and (max-width:427px) and (min-width:380px){
+    aside{
+display: flex;	    
+position: fixed;
+bottom: 0;
+Z-index:20;
+transform: scale(0.9);
+    margin-left: -20px;
+}
+
+ul{
+flex-direction:row;
+}
+
+.wrapper{
+        
+        padding: 20px;
+        transform: translatey(-100%);
+        position: relative;
+        bottom: -555px;
+        height: 80%;
+    }
+.hero{
+    width: 100%;
+}
+
+.grid{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 530px;
+}
+
+.imgholder{
+    height: 200px;
+    width: 153px;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.wrapper.home{
+    bottom:-100px;
+}
+
+.wrapper.home.active{
+    position: fixed;
+    top:0
+}
+
+.wrapper.about{
+    bottom:493px;
+    width: 100%;
+}
+
+.wrapper.about.active{
+    position: fixed;
+    top:0
+}
+
+.wrapper.contact{
+    width: 100%;
+    bottom: 820px;
+    height: 566px;
+}
+
+.wrapper.contact.active{
+    position: fixed;
+    top:0
+}
+
+.edu ul{
+    flex-direction: column;
+}
+
+}
+
+@media screen and (max-width:379px){
+    aside{
+display: flex;	    
+position: fixed;
+bottom: 0;
+Z-index:20;
+transform: scale(0.9);
+    margin-left: -20px;
+}
+
+ul{
+flex-direction:row;
+}
+
+.wrapper{
+        
+        padding: 20px;
+        transform: translatey(-100%);
+        position: relative;
+        bottom: -555px;
+        height: 80%;
+    }
+.hero{
+    width: 100%;
+}
+
+.grid{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 530px;
+}
+
+.imgholder{
+    height: 180px;
+    width: 153px;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    position: relative;
+    top:-17px;
+}
+
+.wrapper.home{
+    bottom:-100px;
+}
+
+.wrapper.home.active{
+    position: fixed;
+    top:0
+}
+
+.wrapper.about{
+    bottom:493px;
+    width: 100%;
+}
+
+.wrapper.about.active{
+    position: fixed;
+    top:0
+}
+
+.wrapper.contact{
+    width: 100%;
+    bottom: 820px;
+    height: 566px;
+}
+
+.wrapper.contact.active{
+    position: fixed;
+    top:0
 }
 
 .edu ul{
