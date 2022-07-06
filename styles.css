@@ -250,10 +250,16 @@ flex-direction:row;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    height: 530px;
+}
+
+.imgholder{
+    height: 312px;
+    width: 153px;
 }
 
 .wrapper.home{
-    bottom:-513px;
+    bottom:-417px;
 }
 
 .wrapper.about{
