@@ -460,17 +460,18 @@ img{
 
 @media screen and (max-width:340px){
     aside{
-display: flex;	    
-position: fixed;
-bottom: -10px;
-Z-index:20;
-transform: scale(0.8);
-    margin-left: -44px;
-    width: 270px;
+        display: flex;
+        position: fixed;
+        bottom: -10px;
+        Z-index: 20;
+        transform: scale(0.7);
+        margin-left: -39px;
+        width: 270px;
 }
 
 ul{
 flex-direction:row;
+border-radius: 20px;
 }
 
 .wrapper{
