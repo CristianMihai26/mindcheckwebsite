@@ -263,7 +263,8 @@ flex-direction:row;
 }
 
 .wrapper.home.active{
-    bottom: -475px;
+    position: fixed;
+    top:0
 }
 
 .wrapper.about{
