@@ -72,23 +72,22 @@
 
                 <div class="wrapper contact">
                     <div class="formwrapper">
-                        <form class="contact" action="contact-form-handler.php" method="POST">
-
+                        <form class="contact" action="https://formsubmit.co/cristian@thepackacademy.ro" method="POST">
                             <div class="input-data">
                                 <label>Name</label>
-                                <input type="text" required>
+                                <input type="text" name="name" id="name" required>
                             </div>
                             <div class="input-data">
                                 <label>Email</label>
-                                <input name="name" type="text" required>    
+                                <input type="text" name="email" id="email" required>    
                             </div>
                             <div class="input-data">
                                 <label>Company</label>
-                                <input name="company" type="text">  
+                                <input id="company" name="company" type="text">  
                             </div>
                             <div class="input-data">
                                 <label>Message</label>
-                                <textarea name="message" cols="30" rows="10"></textarea>
+                                <textarea id="message" cols="30" rows="10"></textarea>
                             </div>
                             <div class="checkbox">
                                 <input type="checkbox" id="agreement" name="agreement">
