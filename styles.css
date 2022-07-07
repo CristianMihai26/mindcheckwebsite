@@ -231,6 +231,11 @@ p{
     body{
         overflow: auto;
     }
+
+    .wrapper.about{
+        height: fit-content;
+    }
+
 }
 
 .pholder p{
