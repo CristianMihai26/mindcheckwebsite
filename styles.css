@@ -236,6 +236,10 @@ p{
         height: fit-content;
     }
 
+    ul{
+        background: rgb(0 0 0 / 8%);
+    }
+
 }
 
 .pholder p{
