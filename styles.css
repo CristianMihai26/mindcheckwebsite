@@ -388,8 +388,8 @@ img{
 }
 
 .wrapper.about.active{
-    position: fixed;
-    top:0
+    position: relative;
+    top: 6rem;
 }
 
 .wrapper.contact{
@@ -411,12 +411,12 @@ img{
 
 @media screen and (max-width:379px){
     aside{
-display: flex;	    
-position: fixed;
-bottom: 0;
-Z-index:20;
-transform: scale(0.9);
-    margin-left: -20px;
+        display: flex;
+        position: fixed;
+        bottom: -15px;
+        Z-index: 20;
+        transform: scale(0.8);
+        margin-left: -46px;
 }
 
 ul{
@@ -460,8 +460,8 @@ img{
 }
 
 .wrapper.home.active{
-    position: fixed;
-    top:0
+    position: relative;
+    bottom: -42rem;
 }
 
 .wrapper.about{
@@ -470,8 +470,8 @@ img{
 }
 
 .wrapper.about.active{
-    position: fixed;
-    top:0
+    position: relative;
+    top: 9rem;
 }
 
 .wrapper.contact{
@@ -495,6 +495,13 @@ img{
 
 @media screen and (max-width:340px){
 
+.edu{
+    width: max-content;
+    color: white;
+    transform: scale(0.8);
+    margin-left: -20px;
+    margin-top: -30px;
+}
 
 aside{
         display: flex;
@@ -562,7 +569,7 @@ img{
 
 .wrapper.home.active{
     position: relative;
-    top: 627px;
+    top: 44rem;
 }
 
 .wrapper.about{
@@ -572,7 +579,7 @@ img{
 
 .wrapper.about.active{
     position: relative;
-    top: 17px;
+    top: 243px;
 }
 
 .wrapper.contact{
@@ -582,8 +589,8 @@ img{
 }
 
 .wrapper.contact.active{
-    position: fixed;
-    top:0
+    position: relative;
+    top: -37rem;
 }
 
 .edu ul{
@@ -632,6 +639,8 @@ img{
             cursor:pointer;
         }
 
-
+#master{
+    margin-top: -6rem;
+}
 
 
